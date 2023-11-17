@@ -19,6 +19,11 @@
 книга в списке или нет.
 */
 
+
+// В конструкторе нужно проверять, нет ли повторений в books.
+// hasBook сразу вернет значение, при первой же итерации.
+// Нужно выбрасывать ошибки, если что-то не так пошло в методах, не возвращать true/false
+
 const books = []
 
 class Library {
@@ -30,7 +35,7 @@ class Library {
     return this.#books;
   }
   hasBook(title, books) {
-    for (var i = 0; i < books.length; i++) {
+    for (let i = 0; i < books.length; i++) {
       if (arr[i] === title) {
         return true;
       }
@@ -38,7 +43,7 @@ class Library {
       }
     }
   addBook(title) {
-    if (hasBook(title, books) === true) {
+    if (hasBook(title, books)) {
       console.error("Книга с таким названием уже существует в списке");
     }
     else {
@@ -46,7 +51,7 @@ class Library {
     }
   }
   removeBook(title) {
-    if (hasBook(title, books) === true) {
+    if (hasBook(title, books)) {
       this.#books.delete(title);
     }
     else {
