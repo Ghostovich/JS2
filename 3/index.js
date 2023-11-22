@@ -1,5 +1,10 @@
 "use strict";
 
+// Используйте относительные пути для подключения.
+// У вас нет на странице add элемента reviewList, ошибка будет в коде.
+// reviewBtn нет на странице view, тоже ошибка будет.
+// Для каждой страницы создавайте свой js-файл, либо нужно чтоб код отрабатывался верный для каждой страницы.
+
 const product = document.querySelector('.product');
 const review = document.querySelector('.review');
 const reviewBtn = document.querySelector('.reviewBtn');
