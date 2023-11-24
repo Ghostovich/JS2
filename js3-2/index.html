@@ -1,31 +1,62 @@
-<!-- Вашей задачей является создание веб-слайдера для отображения изображений на веб-странице. 
-Слайдер должен позволять переключаться между изображениями и отображать их в центре экрана.
-
-1. Создайте интерфейс веб-страницы, который включает в себя следующие элементы:
-
-a. Контейнер для отображения текущего изображения.
-b. Кнопки "Предыдущее изображение" и "Следующее изображение" для переключения между изображениями.
-c. Навигационные точки (индикаторы) для быстрого переключения между изображениями.
-
-2. Используйте HTML для создания элементов интерфейса.
-
-3. Используйте JavaScript для обработки событий:
-
-a. При клике на кнопку "Предыдущее изображение" должно отображаться предыдущее изображение.
-b. При клике на кнопку "Следующее изображение" должно отображаться следующее изображение.
-c. При клике на навигационные точки, слайдер должен переключаться к соответствующему изображению.
-
-4. Слайдер должен циклически переключаться между изображениями, 
-то есть после последнего изображения должно отображаться первое, и наоборот.
-
-5. Добавьте стилизацию для слайдера и элементов интерфейса с использованием CSS для улучшения внешнего вида. -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js3-2/index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="slider center">
+      <div class="container__img">
+        <img
+          src="https://images5.1000ps.net/b-f_W2349855-honda-cbf600-s-abs-635464556855116063.jpg"
+          alt="#"
+          class="img active"
+        />
+        <img
+          src="https://mcn-images.bauersecure.com/wp-images/3637/1cbf600ij029-01.jpg"
+          alt="#"
+          class="img"
+        />
+        <img
+          src="https://mymotoshop.ru/image/catalog/5.Novosti/2019/012/model-mo-honda-cbf-600.jpg"
+          alt="#"
+          class="img"
+        />
+        <img
+          src="https://avto-russia.ru/moto/honda/photo/honda_cbf600sa_1.jpg"
+          alt="#"
+          class="img"
+        />
+        <img
+          src="https://www.major-honda.ru/images/original/cbf600sa_60.jpg"
+          alt="#"
+          class="img"
+        />
+      </div>
+      <div class="buttons">
+        <button class="buttons__prev">Предыдущее изображение</button>
+        <button class="buttons__next">Следующее изображение</button>
+      </div>
+      <div class="nav">
+        <svg width="30" height="30" viewBox="-100 -100 200 200">
+          <circle cx="0" cy="20" r="40" fill="black" />
+        </svg>
+        <svg width="30" height="30" viewBox="-100 -100 200 200">
+          <circle cx="0" cy="20" r="40" fill="black" />
+        </svg>
+        <svg width="30" height="30" viewBox="-100 -100 200 200">
+          <circle cx="0" cy="20" r="40" fill="black" />
+        </svg>
+        <svg width="30" height="30" viewBox="-100 -100 200 200">
+          <circle cx="0" cy="20" r="40" fill="black" />
+        </svg>
+        <svg width="30" height="30" viewBox="-100 -100 200 200">
+          <circle cx="0" cy="20" r="40" fill="black" />
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>

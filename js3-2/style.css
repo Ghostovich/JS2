@@ -1,0 +1,56 @@
+.center {
+  padding-left: calc(50% - 1200px / 2);
+  padding-right: calc(50% - 1200px / 2);
+}
+
+.container__img {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.img {
+ height: 800px;
+  object-fit: cover;
+}
+
+.active{
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.buttons__next {
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.buttons__prev {
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.nav{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.nav svg:hover{
+  opacity:0.7;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
